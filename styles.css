@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/Hero.png);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#travel-menu {
+  list-style-type: none;
+  display: flex;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#travel-menu li a {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#travel-menu li:nth-child(3) {
+  margin-left: 30px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#intro {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.booking {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-title {
+  width: 180px;
+  height: 40px;
+
+  background: #212121;
+  border-radius: 20px 120px 0px 0px;
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-blur {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(81, 77, 89, 0.1);
+  box-shadow: 0px 195px 78px rgba(81, 77, 89, 0.02),
+    0px 110px 66px rgba(81, 77, 89, 0.08), 0px 49px 49px rgba(81, 77, 89, 0.13),
+    0px 12px 27px rgba(81, 77, 89, 0.15), 0px 0px 0px rgba(81, 77, 89, 0.15);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 0px 20px 20px 20px;
+  padding: 25px;
+}
+
+.booking-form {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px 32px;
+}
+
+.parent {
+  display: flex;
+}
+
+.child {
+  width: 25%;
+}
+.can {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  /* identical to box height, or 86% */
+
+  text-align: center;
+
+  color: #514d59;
+  margin-bottom: 90px;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.item {
+  text-align: center;
+  width: 25%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item h3 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #514d59;
+}
+
+.item p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+
+  text-align: center;
+
+  color: #514d59;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .child {
+    width: 50%;
+  }
+}
